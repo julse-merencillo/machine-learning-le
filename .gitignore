@@ -1,0 +1,6 @@
+tensorboard_logs/
+.pip_packages/
+.direnv/
+*.pdf
+*.xlsx
+*.rar
