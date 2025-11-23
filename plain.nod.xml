@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes version="1.16" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/nodes_file.xsd">
+    <location netOffset="0.00,0.00" convBoundary="0.00,0.00,200.00,200.00" origBoundary="0.00,0.00,200.00,200.00" projParameter="!"/>
+    <node id="A1" x="0.00" y="100.00" type="priority"/>
+    <node id="A1_div" x="50.00" y="100.00" type="priority"/>
+    <node id="B0" x="100.00" y="0.00" type="priority"/>
+    <node id="B0_merge" x="100.00" y="50.00" type="priority"/>
+    <node id="B1" x="100.00" y="100.00" type="traffic_light" tl="B1"/>
+    <node id="B2" x="100.00" y="200.00" type="priority"/>
+    <node id="C1" x="200.00" y="100.00" type="priority"/>
+</nodes>

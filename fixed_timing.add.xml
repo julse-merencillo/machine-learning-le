@@ -1,0 +1,16 @@
+<additional>
+    <tlLogic id="B1" type="static" programID="fixed" offset="0">
+        <!-- Phase 1 (55s): South → North + West (55s green + 3s yellow) -->
+        <phase duration="55" state="rrrrGGGGrrrrGGGG"/>
+        <phase duration="3"  state="rrrryyyyrrrrGGGG"/>
+        <!-- Phase 2 (55s): North → South + East -->
+        <phase duration="55" state="GGGGrrrrGGGGrrrr"/>
+        <phase duration="3"  state="yyyyrrrryyyyrrrr"/>
+        <!-- Phase 3 (55s): West → East + North -->
+        <phase duration="55" state="rrrrGGGGGGGGrrrr"/>
+        <phase duration="3"  state="rrrryyyyyyyyrrrr"/>
+        <!-- Phase 4 (30s): East → West + South -->
+        <phase duration="30" state="rrrrrrrrrrrrGGGG"/>
+        <phase duration="3"  state="rrrrrrrrrrrryyyy"/>
+    </tlLogic>
+</additional>

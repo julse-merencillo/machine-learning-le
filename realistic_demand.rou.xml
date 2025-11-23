@@ -1,0 +1,45 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="moto" vClass="motorcycle" accel="3.0" length="2.0" guiShape="motorcycle"/>
+    <vType id="car" vClass="passenger" accel="2.6" length="5.0" guiShape="passenger"/>
+    <vType id="jeep" vClass="bus" accel="1.5" length="6.0" guiShape="bus" lcKeepRight="10.0" lcStrategic="10.0" latAlignment="right"/>
+    <!-- NORTH: 70% straight, 20% left, 10% right -->
+    <flow id="n_straight_moto" type="moto" begin="0" end="10000" number="420" from="B2B1" to="B0merge_B0" departLane="best"/>
+    <flow id="n_straight_car" type="car" begin="0" end="10000" number="840" from="B2B1" to="B0merge_B0" departLane="best"/>
+    <flow id="n_straight_jeep" type="jeep" begin="0" end="10000" number="140" from="B2B1" to="B0merge_B0" departLane="best"/>
+    <flow id="n_left_moto" type="moto" begin="0" end="10000" number="120" from="B2B1" to="B1C1" departLane="best"/>
+    <flow id="n_left_car" type="car" begin="0" end="10000" number="240" from="B2B1" to="B1C1" departLane="best"/>
+    <flow id="n_left_jeep" type="jeep" begin="0" end="10000" number="40" from="B2B1" to="B1C1" departLane="best"/>
+    <flow id="n_right_moto" type="moto" begin="0" end="10000" number="60" from="B2B1" to="B1A1" departLane="0"/>
+    <flow id="n_right_car" type="car" begin="0" end="10000" number="120" from="B2B1" to="B1A1" departLane="0"/>
+    <flow id="n_right_jeep" type="jeep" begin="0" end="10000" number="20" from="B2B1" to="B1A1" departLane="0"/>
+    <!-- SOUTH: 70% straight, 20% left, 10% right -->
+    <flow id="s_straight_moto" type="moto" begin="0" end="10000" number="350" from="B0_B0merge" to="B1B2" departLane="best"/>
+    <flow id="s_straight_car" type="car" begin="0" end="10000" number="700" from="B0_B0merge" to="B1B2" departLane="best"/>
+    <flow id="s_straight_jeep" type="jeep" begin="0" end="10000" number="112" from="B0_B0merge" to="B1B2" departLane="best"/>
+    <flow id="s_left_moto" type="moto" begin="0" end="10000" number="100" from="B0_B0merge" to="B1A1" departLane="best"/>
+    <flow id="s_left_car" type="car" begin="0" end="10000" number="200" from="B0_B0merge" to="B1A1" departLane="best"/>
+    <flow id="s_left_jeep" type="jeep" begin="0" end="10000" number="32" from="B0_B0merge" to="B1A1" departLane="best"/>
+    <flow id="s_right_moto" type="moto" begin="0" end="10000" number="50" from="B0_B0merge" to="B1C1" departLane="best"/>
+    <flow id="s_right_car" type="car" begin="0" end="10000" number="100" from="B0_B0merge" to="B1C1" departLane="best"/>
+    <flow id="s_right_jeep" type="jeep" begin="0" end="10000" number="16" from="B0_B0merge" to="B1C1" departLane="best"/>
+    <!-- WEST: 70% straight, 20% left, 10% SLIP LANE -->
+    <flow id="w_straight_moto" type="moto" begin="0" end="10000" number="280" from="A1_A1div" to="B1C1" departLane="best"/>
+    <flow id="w_straight_car" type="car" begin="0" end="10000" number="560" from="A1_A1div" to="B1C1" departLane="best"/>
+    <flow id="w_straight_jeep" type="jeep" begin="0" end="10000" number="84" from="A1_A1div" to="B1C1" departLane="best"/>
+    <flow id="w_left_moto" type="moto" begin="0" end="10000" number="80" from="A1_A1div" to="B1B2" departLane="best"/>
+    <flow id="w_left_car" type="car" begin="0" end="10000" number="160" from="A1_A1div" to="B1B2" departLane="best"/>
+    <flow id="w_left_jeep" type="jeep" begin="0" end="10000" number="24" from="A1_A1div" to="B1B2" departLane="best"/>
+    <flow id="w_slip_moto" type="moto" begin="0" end="10000" number="40" from="A1_A1div" to="B0merge_B0" via="slip_W2S" departLane="0"/>
+    <flow id="w_slip_car" type="car" begin="0" end="10000" number="80" from="A1_A1div" to="B0merge_B0" via="slip_W2S" departLane="0"/>
+    <flow id="w_slip_jeep" type="jeep" begin="0" end="10000" number="12" from="A1_A1div" to="B0merge_B0" via="slip_W2S" departLane="0"/>
+    <!-- EAST: 70% straight, 20% left, 10% right -->
+    <flow id="e_straight_moto" type="moto" begin="0" end="10000" number="280" from="C1B1" to="B1A1" departLane="best"/>
+    <flow id="e_straight_car" type="car" begin="0" end="10000" number="560" from="C1B1" to="B1A1" departLane="best"/>
+    <flow id="e_straight_jeep" type="jeep" begin="0" end="10000" number="84" from="C1B1" to="B1A1" departLane="best"/>
+    <flow id="e_left_moto" type="moto" begin="0" end="10000" number="80" from="C1B1" to="B1B2" departLane="best"/>
+    <flow id="e_left_car" type="car" begin="0" end="10000" number="160" from="C1B1" to="B1B2" departLane="best"/>
+    <flow id="e_left_jeep" type="jeep" begin="0" end="10000" number="24" from="C1B1" to="B1B2" departLane="best"/>
+    <flow id="e_right_moto" type="moto" begin="0" end="10000" number="40" from="C1B1" to="B0merge_B0" departLane="best"/>
+    <flow id="e_right_car" type="car" begin="0" end="10000" number="80" from="C1B1" to="B0merge_B0" departLane="best"/>
+    <flow id="e_right_jeep" type="jeep" begin="0" end="10000" number="12" from="C1B1" to="B0merge_B0" departLane="best"/>
+</routes>
