@@ -1,0 +1,12 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="moto" vClass="motorcycle" accel="3.0" length="2.0" width="0.8" guiShape="motorcycle"/>
+    <vType id="car" vClass="passenger" accel="2.6" length="5.0" width="1.8" guiShape="passenger"/>
+    <vType id="jeep" vClass="bus" accel="1.5" length="6.0" width="1.8" guiShape="bus" lcKeepRight="10.0" lcStrategic="10.0" lcCooperative="0.0" latAlignment="right" minGapLat="0.5"/>
+    <vType id="truck" vClass="truck" accel="1.0" length="12.0" width="2.4" guiShape="truck/trailer"/>
+    <flow id="flow_moto_7am_west" type="moto" begin="0" end="3600" number="324" from="A1B1" to="B1C1"/>
+    <flow id="flow_car_7am_west" type="car" begin="0" end="3600" number="187" from="A1B1" to="B1C1"/>
+    <flow id="flow_jeep_7am_west" type="jeep" begin="0" end="3600" number="55" from="A1B1" to="B1C1"/>
+    <flow id="flow_moto_7am_south" type="moto" begin="0" end="3600" number="150" from="B0B1" to="B1B2"/>
+    <flow id="flow_car_7am_south" type="car" begin="0" end="3600" number="100" from="B0B1" to="B1B2"/>
+    <flow id="flow_jeep_7am_south" type="jeep" begin="0" end="3600" number="30" from="B0B1" to="B1B2"/>
+</routes>

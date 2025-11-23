@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edges version="1.16" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+    <!-- WEST APPROACH: Split at diverge point -->
+    <edge id="A1_A1div" from="A1" to="A1_div" numLanes="3" speed="13.89"/>
+    <edge id="A1div_B1" from="A1_div" to="B1" numLanes="2" speed="13.89"/>
+    <edge id="slip_W2S" from="A1_div" to="B0_merge" numLanes="1" speed="10.00" shape="50.00,100.00 60.00,90.00 80.00,60.00 90.00,50.00 100.00,50.00"/>
+    <!-- SOUTH LEGS: 3 lanes throughout -->
+    <edge id="B0_B0merge" from="B0" to="B0_merge" numLanes="3" speed="13.89"/>
+    <edge id="B0merge_B0" from="B0_merge" to="B0" numLanes="3" speed="13.89"/>
+    <edge id="B1_B0merge" from="B1" to="B0_merge" numLanes="3" speed="13.89"/>
+    <edge id="B0merge_B1" from="B0_merge" to="B1" numLanes="3" speed="13.89"/>
+    <!-- OTHER APPROACHES: Unchanged -->
+    <edge id="B1A1" from="B1" to="A1" numLanes="3" speed="13.89"/>
+    <edge id="B1B2" from="B1" to="B2" numLanes="3" speed="13.89"/>
+    <edge id="B1C1" from="B1" to="C1" numLanes="3" speed="13.89"/>
+    <edge id="B2B1" from="B2" to="B1" numLanes="3" speed="13.89"/>
+    <edge id="C1B1" from="C1" to="B1" numLanes="3" speed="13.89"/>
+</edges>

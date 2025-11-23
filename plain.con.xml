@@ -1,0 +1,34 @@
+<connections version="1.16" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/connections_file.xsd">
+    <!-- DIVERGE POINT (A1_div) -->
+    <connection from="A1_A1div" to="slip_W2S" fromLane="0" toLane="0"/>
+    <connection from="A1_A1div" to="A1div_B1" fromLane="1" toLane="0"/>
+    <connection from="A1_A1div" to="A1div_B1" fromLane="2" toLane="1"/>
+    <!-- MERGE POINT (B0_merge) -->
+    <connection from="slip_W2S" to="B0merge_B0" fromLane="0" toLane="0"/>
+    <connection from="B1_B0merge" to="B0merge_B0" fromLane="0" toLane="1"/>
+    <connection from="B1_B0merge" to="B0merge_B0" fromLane="1" toLane="2"/>
+    <connection from="B1_B0merge" to="B0merge_B0" fromLane="2" toLane="2"/>
+    <connection from="B0_B0merge" to="B0merge_B1" fromLane="0" toLane="0"/>
+    <connection from="B0_B0merge" to="B0merge_B1" fromLane="1" toLane="1"/>
+    <connection from="B0_B0merge" to="B0merge_B1" fromLane="2" toLane="2"/>
+    <!-- West approach -->
+    <connection from="A1div_B1" to="B1C1" fromLane="0" toLane="1"/>
+    <connection from="A1div_B1" to="B1C1" fromLane="1" toLane="2"/>
+    <connection from="A1div_B1" to="B1B2" fromLane="1" toLane="1"/>
+    <connection from="A1div_B1" to="B1_B0merge" fromLane="0" toLane="1"/>
+    <!-- South northbound -->
+    <connection from="B0merge_B1" to="B1B2" fromLane="0" toLane="0"/>
+    <connection from="B0merge_B1" to="B1B2" fromLane="1" toLane="1"/>
+    <connection from="B0merge_B1" to="B1A1" fromLane="2" toLane="2"/>
+    <connection from="B0merge_B1" to="B1C1" fromLane="1" toLane="1"/>
+    <!-- NORTH: Right turn (Lane 0) is FREE FLOW -->
+    <connection from="B2B1" to="B1A1" fromLane="0" toLane="0" pass="true"/>
+    <connection from="B2B1" to="B1_B0merge" fromLane="1" toLane="1"/>
+    <connection from="B2B1" to="B1_B0merge" fromLane="2" toLane="2"/>
+    <connection from="B2B1" to="B1C1" fromLane="2" toLane="2"/>
+    <!-- East approach -->
+    <connection from="C1B1" to="B1_B0merge" fromLane="0" toLane="0"/>
+    <connection from="C1B1" to="B1A1" fromLane="1" toLane="1"/>
+    <connection from="C1B1" to="B1A1" fromLane="2" toLane="2"/>
+    <connection from="C1B1" to="B1B2" fromLane="2" toLane="1"/>
+</connections>

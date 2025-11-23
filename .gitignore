@@ -4,3 +4,4 @@ tensorboard_logs/
 *.pdf
 *.xlsx
 *.rar
+.venv
