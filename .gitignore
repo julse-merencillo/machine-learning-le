@@ -1,6 +1,5 @@
-tensorboard_logs/
-.pip_packages/
 .direnv/
-*.pdf
-*.xlsx
-*.rar
+.ipynb_checkpoints/
+.pip_packages/
+misc/
+tensorboard_logs/

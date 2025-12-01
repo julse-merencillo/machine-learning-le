@@ -1,0 +1,13 @@
+<routes>
+    <!-- We are asking SUMO to find a path for one car trip. -->
+    <!-- Replace "north_start" and "north_end" with your actual edge IDs. -->
+    <trip id="debug_N_to_N" from="north_start" to="north_end" depart="0"/>
+    <trip id="debug_S_to_S" from="south_start" to="south_end" depart="0"/>
+    <trip id="debug_E_to_E" from="east_start" to="east_end" depart="0"/>
+    <trip id="debug_W_to_W" from="west_start" to="west_end" depart="0"/>
+  
+    <trip id="debug_W_to_N" from="west_start" to="north_end" depart="0"/>
+    <trip id="debug_E_to_S" from="east_start" to="south_end" depart="0"/>
+    <trip id="debug_S_to_W" from="south_start" to="west_end" depart="0"/>
+    <trip id="debug_N_to_E" from="north_start" to="east_end" depart="0"/>
+</routes>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-11-27 15:29:52 by Eclipse SUMO duarouter Version 1.24.0
+<duarouterConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="quirino_avenue.net.xml"/>
+        <route-files value="test_trip.xml"/>
+    </input>
+
+    <output>
+        <output-file value="correct_route.rou.xml"/>
+    </output>
+
+</duarouterConfiguration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vehicle id="debug_N_to_N" depart="0.00">
+        <routeDistribution last="0">
+            <route cost="46.75" probability="1.00000000" edges="north_start north_1 328904433#0 north_2 north_3 north_end"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="debug_S_to_S" depart="0.00">
+        <routeDistribution last="0">
+            <route cost="62.14" probability="1.00000000" edges="south_start south_1 south_2 455556298#2 south_3 south_end"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="debug_E_to_E" depart="0.00">
+        <routeDistribution last="0">
+            <route cost="32.29" probability="1.00000000" edges="east_start east_1 1044370690 827072277 east_2 east_3 east_4 east_end"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="debug_W_to_W" depart="0.00">
+        <routeDistribution last="0">
+            <route cost="55.96" probability="1.00000000" edges="west_start west_1 west_2 west_3 23949304 827072229 west_4 west_end"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="debug_W_to_N" depart="0.00">
+        <routeDistribution last="0">
+            <route cost="45.93" probability="1.00000000" edges="west_start west_1 west_2 west_3 23949304 827072229 328904433#0 north_2 north_3 north_end"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="debug_E_to_S" depart="0.00">
+        <routeDistribution last="0">
+            <route cost="53.84" probability="1.00000000" edges="east_start east_1 1044370690 827072277 south_1 south_2 455556298#2 south_3 south_end"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="debug_S_to_W" depart="0.00">
+        <routeDistribution last="0">
+            <route cost="74.68" probability="1.00000000" edges="south_start south_1 south_2 455556298#2 23949304 827072229 west_4 west_end"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="debug_N_to_E" depart="0.00">
+        <routeDistribution last="0">
+            <route cost="50.99" probability="1.00000000" edges="north_start north_1 328904433#0 north_2 1044370690 827072277 east_2 east_3 east_4 east_end"/>
+        </routeDistribution>
+    </vehicle>
+</routes>

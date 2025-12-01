@@ -1,32 +1,32 @@
-import sumo_rl
+# evaluate_agent.py
 import gymnasium as gym
+import sumo_rl
 from stable_baselines3 import DQN
+import os
 
-print("\n--- Running the trained model ---")
+# Load the environment using the RL config (the one WITHOUT the .ttl.xml)
+env = gym.make('sumo-rl-v0',
+               net_file='quirino_avenue.net.xml',
+               route_file='traffic_routes.rou.xml',
+               use_gui=True,  # Set to True to watch your agent work!
+               num_seconds=86400,
+               delta_time=15,
+               yellow_time=5,
+               out_csv_name='rl_metrics.csv',
+               additional_sumo_cmd=f"--additional-files vehicle_types.add.xml --seed 42 --tripinfo-output rl_trip_info.xml" # USE THE SAME SEED!
+               )
 
-# 1. Load the environment with the GUI enabled
-eval_env = gym.make('sumo-rl-v0',
-                    net_file='single_intersection.net.xml',
-                    route_file='single_intersection.rou.xml',
-                    use_gui=True, # Set to True to watch the agent
-                    num_seconds=10000)
-
+# Load the trained model
 model_path = "./model.zip"
+model = DQN.load(model_path)
 
-# 2. Load the trained model
-saved_model = DQN.load(model_path, env=eval_env)
-
-# 3. Run the simulation loop
-obs, info = eval_env.reset()
+print("Starting RL Agent evaluation...")
+obs, info = env.reset()
 done = False
 while not done:
-    # 4. Get the best action from the model (deterministic=True)
-    #    deterministic=True ensures the agent doesn't explore and picks the best-known action.
-    action, _states = saved_model.predict(obs, deterministic=True)
-    print(f'Action: {action}') 
-    # 5. Apply the action to the environment
-    obs, reward, terminated, truncated, info = eval_env.step(action)
+    # Use deterministic=True for evaluation to get the best action
+    action, _ = model.predict(obs, deterministic=True)
+    obs, reward, terminated, truncated, info = env.step(action)
     done = terminated or truncated
 
-eval_env.close()
-print("Evaluation finished.")
+env.close()

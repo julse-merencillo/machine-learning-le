@@ -1,4 +1,3 @@
-# flake.nix
 {
   description = "Traffic RL with SUMO";
 
@@ -22,6 +21,8 @@
 	  pip
           tensorboard
           jupyter
+	  lxml
+	  tabula-py
           # Add others as needed
         ]);
       in
@@ -30,6 +31,7 @@
           buildInputs = [
             pythonEnv
             pkgs.sumo
+	    pkgs.jdk
           ];
 
           shellHook = ''
