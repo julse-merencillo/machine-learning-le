@@ -1,0 +1,18 @@
+<routes>
+    <!-- The 'depart="0"' attribute tells SUMO the trip starts at the beginning of the simulation. -->
+    <trip id="debug_N_to_S" from="north_start" to="south_end" depart="0"/>
+    <trip id="debug_N_to_W" from="north_start" to="west_end" depart="0"/>
+    <trip id="debug_N_to_E" from="north_start" to="east_end" depart="0"/>
+
+    <trip id="debug_S_to_W" from="south_start" to="west_end" depart="0"/>
+    <trip id="debug_S_to_E" from="south_start" to="east_end" depart="0"/>
+    <trip id="debug_S_to_N" from="south_start" to="north_end" depart="0"/>
+
+    <trip id="debug_E_to_W" from="east_start" to="west_end" depart="0"/>
+    <trip id="debug_E_to_N" from="east_start" to="north_end" depart="0"/>
+    <trip id="debug_E_to_S" from="east_start" to="south_end" depart="0"/>
+
+    <trip id="debug_W_to_S" from="west_start" to="south_end" depart="0"/>
+    <trip id="debug_W_to_N" from="west_start" to="north_end" depart="0"/>
+    <trip id="debug_W_to_E" from="west_start" to="east_end" depart="0"/>
+</routes>

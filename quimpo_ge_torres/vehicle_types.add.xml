@@ -1,0 +1,24 @@
+<additional>
+    <vTypeDistribution id="realdistribution">
+        <!-- Motorcycles -->
+        <vType id="motor" vClass="motorcycle" accel="3.5" decel="4.0" length="2.2" maxSpeed="33.3" sigma="0.8" probability="0.20"/>
+        
+        <!-- Passenger Cars -->
+        <vType id="car" vClass="passenger" accel="2.5" decel="3.0" length="4.5" maxSpeed="33.3" sigma="0.5" probability="0.57"/>
+
+        <!-- PUV -->
+        <vType id="puv" vClass="passenger" accel="1.5" decel="2.5" length="6.5" maxSpeed="22.2" sigma="0.6" probability="0.1"/>
+
+        <!-- Goods Truck -->
+        <vType id="goods" vClass="truck" accel="1.2" decel="2.0" length="9.0" maxSpeed="25" sigma="0.4" probability="0.11"/>
+
+        <!-- Small Bus -->
+        <vType id="bus" vClass="bus" accel="1.8" decel="3.0" length="8.5" maxSpeed="27.8" sigma="0.5" probability="0.01"/>
+
+        <!-- Small Trailer -->
+        <vType id="small-trailer" vClass="truck" accel="1.0" decel="2.0" length="14.0" maxSpeed="23.6" sigma="0.4" probability="0.01"/>
+
+    </vTypeDistribution>
+</additional>
+
+  

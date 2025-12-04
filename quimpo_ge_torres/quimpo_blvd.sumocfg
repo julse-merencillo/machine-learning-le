@@ -1,0 +1,21 @@
+<configuration>
+    <input>
+        <!-- 1. Load the network. The traffic light logic is saved INSIDE this file. -->
+        <net-file value="quimpo-GE_torres.net.xml"/>
+        
+        <!-- 2. Load the vehicle routes. -->
+        <route-files value="quimpo_traffic_route.rou.xml"/>
+        
+        <!-- 3. Load the vehicle types. This is the crucial line. -->
+        <additional-files value="vehicle_types.add.xml"/>
+    </input>
+    
+    <output>
+        <tripinfo-output value="tripinfo.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="86400"/>
+    </time>
+</configuration>
